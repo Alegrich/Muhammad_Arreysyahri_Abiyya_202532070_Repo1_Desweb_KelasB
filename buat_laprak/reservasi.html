@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulir Reservasi & Layanan Servis</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="katalog.html">Katalog Peralatan & Spesifikasi</a></li>
+        <li><a href="reservasi.html">Formulir Reservasi & Servis</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Pengajuan Sewa & Kalibrasi Alat</h2>
+        <p>Silakan lengkapi formulir di bawah ini dengan data yang valid.</p>
+
+     
+        <form action="#" method="post">
+      
+          <div>
+            <label for="borrowerName">Nama Lengkap Mahasiswa:</label><br />
+            <input
+              type="text"
+              id="borrowerName"
+              name="borrowerName"
+              required
+              placeholder="Masukkan nama sesuai KTM"
+            />
+          </div>
+          <br />
+
+          
+          <div>
+            <label for="studentEmail"
+              >Email Mahasiswa (Domain Kampus/Pribadi):</label
+            ><br />
+            <input
+              type="email"
+              id="studentEmail"
+              name="studentEmail"
+              required
+              placeholder="contoh@student.itpln.ac.id"
+            />
+          </div>
+          <br />
+
+        
+          <div>
+            <label for="reservationDate">Tanggal Pengambilan Peralatan:</label
+            ><br />
+            <input
+              type="date"
+              id="reservationDate"
+              name="reservationDate"
+              required
+            />
+          </div>
+          <br />
+
+      
+          <fieldset>
+            <legend>Jenis Layanan yang Diajukan</legend>
+            <label>
+              <input
+                type="radio"
+                name="serviceType"
+                value="pinjam_kamera"
+                required
+              />
+              Penyewaan Kamera & Lensa </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                name="serviceType"
+                value="kalibrasi_cleaning"
+              />
+              Pembersihan Sensor & Kalibrasi Optik </label
+            ><br />
+            <label>
+              <input type="radio" name="serviceType" value="pinjam_lighting" />
+              Penyewaan Equipment Lighting & Riging
+            </label>
+          </fieldset>
+          <br />
+
+          
+          <div>
+            <label for="projectDetails"
+              >Deskripsi Tujuan Penggunaan / Keluhan Peralatan:</label
+            ><br />
+            <textarea
+              id="projectDetails"
+              name="projectDetails"
+              rows="4"
+              cols="50"
+              required
+              placeholder="Tuliskan nama kegiatan praktikum atau gejala kerusakan alat..."
+            ></textarea>
+          </div>
+          <br />
+
+          
+          <button type="submit">Kirim Pengajuan Reservasi</button>
+          <button type="reset">Reset Form</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Rei Lens Labb . Muhammad Arreysyahri Abiyya - 202532070.</p>
+    </footer>
+  </body>
+</html>
